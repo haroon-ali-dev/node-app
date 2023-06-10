@@ -26,6 +26,7 @@ jobs:
       # install dependencies using 'npm ci' which installs using package-lock.json (faster)
       - name: Install dependencies
         run: npm ci
+        working-directory: server
       # create zip file
       - name: Generate zip file
         run: zip -r deploy.zip server
