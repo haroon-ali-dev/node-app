@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const message = "Hello Worlds";
+const message = "Hello World";
 
 app.get("/", (req, res) => {
     const message = process.env.mykey;
