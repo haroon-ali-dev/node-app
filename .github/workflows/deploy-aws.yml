@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Print to console
-      - run: echo "Hello World"
+        run: echo "Hello World"
