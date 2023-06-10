@@ -23,11 +23,11 @@ jobs:
           node-version: '18.x'
           cache: 'npm'
       # # install dependencies using 'npm ci' which installs using package-lock.json (faster)
-      # - name: Install dependencies
-      # - run: npm ci
+      - name: Install dependencies
+      - run: npm ci
       # # create zip file
-      # - name: Generate zip file
-      #   run: zip -r deploy.zip server
+      - name: Generate zip file
+        run: zip -r deploy.zip server
       # # create timestamp
       # - name: Create timestamp
       #   uses: gerred/actions/current-time@master
