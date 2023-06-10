@@ -16,6 +16,7 @@ jobs:
     steps:
       # access the repo
       - uses: actions/checkout@v3
+        path: server
       # setup Node.js with caching for dependencies
       - name: Use Node.js
         uses: actions/setup-node@v3
@@ -27,7 +28,7 @@ jobs:
         run: npm ci
       # create zip file
       - name: Generate zip file
-        run: zip -r deploy.zip server
+        run: zip -r deploy.zip *
       # create timestamp
       - name: Create timestamp
         uses: gerred/actions/current-time@master
