@@ -29,7 +29,7 @@ jobs:
         working-directory: server
       # create zip file
       - name: Generate zip file
-        run: zip -r deploy.zip server
+        run: (cd server && zip -r "$OLDPWD/deploy.zip" .)
       # create timestamp
       - name: Create timestamp
         uses: gerred/actions/current-time@master
