@@ -1,0 +1,14 @@
+name: AWS Deploy
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ /server/** ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print to console
+      - run: echo "Hello World"
