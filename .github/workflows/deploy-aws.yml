@@ -17,14 +17,14 @@ jobs:
       # access the repo
       - uses: actions/checkout@v3
       # setup Node.js with caching for dependencies
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-          cache: 'npm'
-      # install dependencies using 'npm ci' which installs using package-lock.json (faster)
-      - name: Install dependencies
-      - run: npm ci
+      # - name: Use Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '18.x'
+      #     cache: 'npm'
+      # # install dependencies using 'npm ci' which installs using package-lock.json (faster)
+      # - name: Install dependencies
+      # - run: npm ci
       # # create zip file
       # - name: Generate zip file
       #   run: zip -r deploy.zip server
